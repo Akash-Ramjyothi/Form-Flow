@@ -13,10 +13,6 @@ export function NewOpinion() {
 
     let errors = [];
 
-    if (title.trim().length < 5) {
-      errors.push('Title must be at least 5 characters long.')
-    }
-
     if (body.trim().length < 10 || body.trim().length > 300) {
       errors.push('Opinion must be between 10 and 300 characters long.')
     }
